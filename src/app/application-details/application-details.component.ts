@@ -25,7 +25,7 @@ export class ApplicationDetailsComponent {
     });
     this.store.select(applicationCountSelector).subscribe((res: any) => {
       this.applicationCount = res;
-    });
+    }); 
   }
   removeApplication(applicationId: string) {
     this.store.dispatch(
