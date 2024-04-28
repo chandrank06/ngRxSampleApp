@@ -6,6 +6,6 @@ export const applicationSelector = (state: AppState) => state.applicationList;
 export const applicationCountSelector = createSelector(
   applicationSelector,
   (state) => {
-    return state.applicationList.length;
+    return state;
   }
 );

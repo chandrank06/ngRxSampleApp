@@ -10,7 +10,7 @@ export const applicationObj: AppState = {
 };
 export const applicationsReducer = createReducer(
   applicationObj,
-  on(addApplicationAction, (state: any, { appDetails }) => {
+  on(addApplicationAction, (state: AppState, { appDetails }) => {
     console.log(state);
 
     return {

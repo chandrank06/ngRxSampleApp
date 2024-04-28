@@ -20,7 +20,7 @@ export class ApplicationDetailsComponent {
   applicationCount: any;
   constructor(private store: Store<AppState>) {}
   ngOnInit() {
-    this.store.select('applications').subscribe((res: AppState) => {
+    this.store.select(applicationSelector).subscribe((res: AppState) => {
       this.applicationList = res.applicationList;
     });
     this.store.select(applicationCountSelector).subscribe((res: any) => {

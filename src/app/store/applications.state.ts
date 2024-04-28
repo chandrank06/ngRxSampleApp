@@ -1,3 +1,3 @@
 export interface AppState {
-  applicationList: [];
+  applicationList: any;
 }
